@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Form - Land of Boxes</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Form - Land of Boxes</h1>
+    <form action="process_order.php" method="post">
+        <h2>Contact Details</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><input type="text" name="address" required></td>
+            </tr>
+            <tr>
+                <th>Telephone Number</th>
+                <td><input type="tel" name="telephone" required></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email" required></td>
+            </tr>
+        </table>
+
+        <h2>Product Details</h2>
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Price (R)</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>The EconoBox</td>
+                <td>1</td>
+                <td>5</td>
+                <td><input type="number" name="quantity_1" min="0"></td>
+            </tr>
+            <tr>
+                <td>The Standard Box</td>
+                <td>2</td>
+                <td>10</td>
+                <td><input type="number" name="quantity_2" min="0"></td>
+            </tr>
+            <tr>
+                <td>The Premium Box</td>
+                <td>3</td>
+                <td>15</td>
+                <td><input type="number" name="quantity_3" min="0"></td>
+            </tr>
+            <tr>
+                <td>The Deluxe Box</td>
+                <td>4</td>
+                <td>20</td>
+                <td><input type="number" name="quantity_4" min="0"></td>
+            </tr>
+            <tr>
+                <td>The Super Deluxe Box</td>
+                <td>5</td>
+                <td>30</td>
+                <td><input type="number" name="quantity_5" min="0"></td>
+            </tr>
+        </table>
+
+        <h2>Method of Payment</h2>
+        <table>
+            <tr>
+                <th>Credit Card Type</th>
+                <td>
+                    <select name="credit_card_type" required>
+                        <option value="Visa">Visa</option>
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="American Express">American Express</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Card Number</th>
+                <td><input type="text" name="card_number" required></td>
+            </tr>
+            <tr>
+                <th>Expiry Date</th>
+                <td><input type="text" name="expiry_date" placeholder="MM/YYYY" required></td>
+            </tr>
+        </table>
+
+        <h2>Billing and Delivery Address</h2>
+        <table>
+            <tr>
+                <th>Billing Address</th>
+                <td><input type="text" name="billing_address"></td>
+            </tr>
+            <tr>
+                <th>Delivery Address</th>
+                <td><input type="text" name="delivery_address"></td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Submit Order">
+    </form>
+</body>
+</html>

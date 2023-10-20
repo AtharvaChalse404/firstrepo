@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form </title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="" autocomplete="on" novalidate>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" maxlength="30" pattern="[A-Za-z]+" title="Please enter only characters" placeholder="Enter your first name" required>
+        
+        <br><br>
+        <label for="lname">Last Name: </label>  
+        <input type="text" name="lname" id="lname" maxlength="30" placeholder="Enter your last name" required>
+        <br><br>
+        <label for="date">Date Of Birth:</label>
+        <input type="date" name="" id="" min="2000-01-01">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" multiple placeholder="abc@mail.com,xzy@gmail.com">
+        <br><br>
+        <label for="Mobile Number">Mobile Number:</label>
+        <input type="tel" name="Mobile Number" id="Mobile Number" maxlength="10" required> (10 digit number)
+        <br><br>
+        <label for="gender">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="gender" checked>
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="gender">
+        <br><br>
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" rows="4" cols="22">
+            </textarea>
+            <br> <br>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" maxlength="30" pattern="[a-zA-Z]+">
+            <br><br>
+            <label for="pincode">Pincode:</label> 
+            <input type="number" name="pincode" id="pincode" maxlength="6" accept="Number" required>
+            <br><br>
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state" maxlength="30" value="Maharashtra" readonly>
+        <br><br>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="none" disabled selected>None</option>
+            <option value="India" >India</option>
+            <option value="Europe">Europe</option>
+            <option value="USA">USA</option>
+            <option value="New York">New York</option>
+            <option value="Singrapore">Singrapore</option>
+        </select>
+        <br><br>
+        <label for="hobbies">Hobbies:</label>
+        <label for="drawing">Drawing:</label>
+        <input type="checkbox" name="drawing" id="drawing">
+        <label for="singing">Singing</label>
+        <input type="checkbox" name="singing" id="singing">
+        <label for="dancing">Dancing:</label>
+        <input type="checkbox" name="dancing" id="dancing">
+        <label for="sketching">Sketching</label>
+        <input type="checkbox" name="sketching" id="sketching">
+        <br>
+        <label for="others">others</label>
+        <textarea name="others" id="others" rows="1" cols="12"></textarea>    
+        <br><br>
+        <br><br>
+        <input type="submit" value="submit" >
+        
+    </form>
+</body>
+</html>
